@@ -270,7 +270,6 @@ class TestProductRoutes(TestCase):
         response = self.client.put(BASE_URL)
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
-
     ######################################################################
     # Utility functions
     ######################################################################
