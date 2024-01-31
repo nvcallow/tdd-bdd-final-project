@@ -265,6 +265,12 @@ class TestProductRoutes(TestCase):
         for product in data:
             self.assertEqual(product["available"], True)
 
+    def test_error_method_not_allowed(self):
+        """ It should create a method not allowed error """
+        response = self.client.put(BASE_URL)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+
     ######################################################################
     # Utility functions
     ######################################################################
