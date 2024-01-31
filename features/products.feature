@@ -53,7 +53,7 @@ Scenario: Reading a Product
     And I should see "A red fedora" in the "Description" field
     And I should see "True" in the "Available" dropdown
     And I should see "Cloths" in the "Category" dropdown
-    And I should see "34.95" in the "Price" field
+    And I should see "59.95" in the "Price" field
 
 Scenario: Update a Product
     When I visit the "Home Page"
